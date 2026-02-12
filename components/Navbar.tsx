@@ -32,7 +32,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="relative z-10 border-t-2 border-orange-500 bg-black">
+    <header className="relative z-10 bg-black">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 pt-4">
         <Link href="/" className="flex shrink-0 items-center gap-1">
           <Image
