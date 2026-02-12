@@ -1,0 +1,50 @@
+"use client";
+
+export function ResearchHero() {
+  return (
+    <section className="relative min-h-[calc(100vh-3.5rem)] w-full overflow-hidden bg-black">
+      <div className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col justify-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="text-2xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Our Vision
+          </h1>
+          <p className="mt-4 text-sm leading-relaxed text-white/90 sm:mt-6 sm:text-base sm:text-lg">
+            To create a sustainable innovation ecosystem where ideas evolve into
+            impactful technologies, empowering industries, institutions, and
+            entrepreneurs through knowledge, data, and design, while ensuring
+            that these innovations are protected under IP laws through efficient
+            patent registration by our team.
+          </p>
+
+          <h2 className="mt-10 text-2xl font-bold leading-tight text-white sm:mt-16 sm:text-5xl lg:text-6xl">
+            Zestlogics R&D
+          </h2>
+          <p className="mt-3 text-lg font-medium text-white sm:mt-4 sm:text-xl sm:text-2xl">
+            At Zestlogics, we see research as an investment in the future.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-white/90 sm:mt-6 sm:text-base sm:text-lg">
+            Our Research & Development division drives innovation at the
+            intersection of technology, intellectual property, and data
+            intelligence, building solutions that shape tomorrow&apos;s
+            innovation landscape.
+          </p>
+        </div>
+      </div>
+
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32 opacity-30"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(38, 38, 38, 0.9) 0%, transparent 70%)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 right-0 h-24"
+        style={{
+          background: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z' fill='%23262626' opacity='0.6'/%3E%3C/svg%3E") no-repeat bottom center`,
+          backgroundSize: "cover",
+        }}
+      />
+    </section>
+  );
+}
