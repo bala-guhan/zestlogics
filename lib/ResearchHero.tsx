@@ -1,8 +1,22 @@
 "use client";
 
+import Image from "next/image";
+
 export function ResearchHero() {
   return (
-    <section className="relative min-h-[calc(100vh-3.5rem)] w-full overflow-hidden bg-black">
+    <section className="relative min-h-[calc(100vh-3.5rem)] w-full overflow-hidden">
+      <div className="absolute inset-0">
+        <Image
+          src="/services-hero-bg.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
       <div className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col justify-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-2xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">

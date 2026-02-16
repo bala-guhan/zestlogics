@@ -23,7 +23,7 @@ export function LeadershipSection() {
           sizes="50vw"
           priority={false}
         />
-        <h2 className="absolute left-4 top-1/2 z-10 -translate-y-1/2 text-2xl font-bold text-white sm:left-6 sm:text-5xl lg:left-12 lg:text-6xl">
+        <h2 className="absolute bottom-2 left-1/2 z-10 -translate-x-1/2 text-center text-2xl font-bold leading-tight text-white sm:text-5xl lg:left-12 lg:translate-x-0 lg:text-left lg:bottom-4 lg:text-6xl">
           Experienced Leadership
         </h2>
       </div>
