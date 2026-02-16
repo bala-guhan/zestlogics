@@ -34,8 +34,8 @@ export function Footer() {
               className="hover:text-white"
             >
               info@zestlogics.com
-            </a>
-            <span>Pune, Maharashtra, India</span>
+            </a>  
+            <span>Chennai, India</span>
             <span>California, USA</span>
           </div>
           <p className="mt-8 text-sm text-white/80">
