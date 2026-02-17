@@ -1,18 +1,36 @@
 "use client";
 
 import Image from "next/image";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export function LeadershipSection() {
   return (
     <section className="grid w-full grid-cols-1 bg-[#0a0a0a] lg:grid-cols-2">
       <div className="flex flex-col justify-center px-4 py-10 sm:px-6 sm:py-12 lg:px-12 lg:py-16">
-        <p className="max-w-lg text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg">
+        <TextAnimate
+          as="h2"
+          by="word"
+          once
+          startOnView
+          animation="blurInUp"
+          className="max-w-lg text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
+        >
+          Experienced Leadership
+        </TextAnimate>
+        <TextAnimate
+          as="p"
+          by="word"
+          once
+          startOnView
+          animation="fadeIn"
+          className="mt-4 max-w-lg text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg"
+        >
           Zestlogic&apos;s leadership combines experience in data platforms,
           analytics consulting, and product engineering. This mix helps align
           long-term data strategy with day-to-day delivery, keeping projects
           grounded in business outcomes while following robust engineering and
           governance practices.
-        </p>
+        </TextAnimate>
       </div>
       <div className="relative min-h-[280px] sm:min-h-[320px] lg:min-h-[480px]">
         <Image
@@ -23,9 +41,6 @@ export function LeadershipSection() {
           sizes="50vw"
           priority={false}
         />
-        <h2 className="absolute bottom-2 left-1/2 z-10 -translate-x-1/2 text-center text-2xl font-bold leading-tight text-white sm:text-5xl lg:left-12 lg:translate-x-0 lg:text-left lg:bottom-4 lg:text-6xl">
-          Experienced Leadership
-        </h2>
       </div>
     </section>
   );

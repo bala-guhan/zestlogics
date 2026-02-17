@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export function ContactSection() {
   return (
@@ -14,43 +15,47 @@ export function ContactSection() {
           sizes="100vw"
           priority={false}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-10 px-4 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:flex-row lg:gap-16 lg:px-12">
-        <div className="flex flex-1 flex-col items-center justify-center lg:items-end">
-          <div className="relative flex w-full max-w-sm items-center justify-center opacity-60 sm:max-w-md lg:max-w-lg">
-            <Image
-              src="/urundai.png"
-              alt=""
-              width={480}
-              height={480}
-              className="h-auto w-full object-contain"
-              sizes="(max-width: 1024px) 80vw, 45vw"
-              priority={false}
-            />
-          </div>
-        </div>
-
-        <div className="flex max-w-md flex-1 flex-col lg:max-w-lg lg:items-start">
-          <p className="text-center text-base leading-relaxed text-white sm:text-lg lg:text-left">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-16 sm:px-6 sm:py-20">
+        <div className="mx-auto flex max-w-md flex-col items-center text-center sm:max-w-lg">
+          <TextAnimate
+            as="p"
+            by="word"
+            once
+            startOnView
+            animation="fadeIn"
+            className="text-base leading-relaxed text-white sm:text-lg"
+          >
             If you are exploring data analytics, BI, or AI/ML solutions, we can
             help you scope, design, and implement the right approach for your
             organisation.
-          </p>
-          <p className="mt-8 text-center text-base leading-relaxed text-white sm:text-lg lg:mt-12 lg:text-left">
-            Email us at{" "}
+          </TextAnimate>
+          <TextAnimate
+            as="h2"
+            by="word"
+            once
+            startOnView
+            animation="blurInUp"
+            className="mt-8 text-xl font-bold leading-tight text-white sm:mt-10 sm:text-3xl sm:text-4xl"
+          >
+            Are You Ready to Accelerate Your Business?
+          </TextAnimate>
+          <p className="mt-8 text-base leading-relaxed text-white sm:mt-12 sm:text-lg">
+            <TextAnimate as="span" by="word" once startOnView animation="fadeIn" className="inline">
+              {`Email us at `}
+            </TextAnimate>
             <a
               href="mailto:info@zestlogics.com"
               className="font-bold text-white underline decoration-white/50 underline-offset-2 hover:decoration-white"
             >
               info@zestlogics.com
-            </a>{" "}
-            to schedule a conversation with our team.
+            </a>
+            <TextAnimate as="span" by="word" once startOnView animation="fadeIn" className="inline">
+              {` to schedule a conversation with our team.`}
+            </TextAnimate>
           </p>
-          <h2 className="mt-8 max-w-md text-center text-xl font-bold leading-tight text-white sm:mt-10 sm:text-3xl lg:mt-12 lg:text-left lg:text-4xl">
-            Are You Ready to Accelerate Your Business?
-          </h2>
         </div>
       </div>
     </section>
