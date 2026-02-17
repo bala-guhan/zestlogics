@@ -6,7 +6,7 @@ import { TextAnimate } from "@/components/ui/text-animate";
 export function LeadershipSection() {
   return (
     <section className="grid w-full grid-cols-1 bg-[#0a0a0a] lg:grid-cols-2">
-      <div className="flex flex-col justify-center px-4 py-10 sm:px-6 sm:py-12 lg:px-12 lg:py-16">
+      <div className="flex flex-col items-center justify-center px-4 py-10 text-center sm:px-6 sm:py-12 lg:items-start lg:px-12 lg:py-16 lg:text-left">
         <TextAnimate
           as="h2"
           by="word"
