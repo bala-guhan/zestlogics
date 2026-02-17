@@ -53,7 +53,7 @@ export function ServicesSection() {
           <div className="relative">
             <h2 className="max-w-lg text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
               <TextAnimate as="span" by="word" once startOnView animation="blurInUp" className="inline">
-                Let Your Data Take Your Business to{" "}
+                {`Let Your Data Take Your Business to `}
               </TextAnimate>
               <TextAnimate
                 as="span"
