@@ -6,6 +6,7 @@ import {
   Eye,
   Brain,
 } from "lucide-react";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const services = [
   {
@@ -51,15 +52,33 @@ export function ServicesSection() {
           />
           <div className="relative">
             <h2 className="max-w-lg text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Let Your Data Take Your Business to{" "}
-              <span className="font-extrabold">Higher Grounds</span>
+              <TextAnimate as="span" by="word" once startOnView animation="blurInUp" className="inline">
+                Let Your Data Take Your Business to{" "}
+              </TextAnimate>
+              <TextAnimate
+                as="span"
+                by="word"
+                once
+                startOnView
+                animation="blurInUp"
+                className="inline font-extrabold"
+              >
+                Higher Grounds
+              </TextAnimate>
             </h2>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-white/85 sm:text-lg">
+            <TextAnimate
+              as="p"
+              by="word"
+              once
+              startOnView
+              animation="fadeIn"
+              className="mt-6 max-w-md text-base leading-relaxed text-white/85 sm:text-lg"
+            >
               Whether you are starting your analytics journey or scaling existing
               solutions, our team focuses on practical, maintainable
               implementations that deliver measurable improvements in performance
               and transparency.
-            </p>
+            </TextAnimate>
           </div>
         </div>
 

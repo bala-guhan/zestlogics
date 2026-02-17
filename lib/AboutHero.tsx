@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export function AboutHero() {
   return (
@@ -19,16 +20,30 @@ export function AboutHero() {
 
       <div className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col justify-center px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-7xl">
-          <h1 className="max-w-3xl text-2xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <TextAnimate
+            as="h1"
+            by="word"
+            once
+            startOnView
+            animation="blurInUp"
+            className="max-w-3xl text-2xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+          >
             Our Mission
-          </h1>
-          <p className="mt-4 max-w-2xl text-base text-white/90 sm:mt-6 sm:text-lg sm:text-xl">
+          </TextAnimate>
+          <TextAnimate
+            as="p"
+            by="word"
+            once
+            startOnView
+            animation="fadeIn"
+            className="mt-4 max-w-2xl text-base text-white/90 sm:mt-6 sm:text-lg sm:text-xl"
+          >
             We exist to help organisations make better decisions by using data
             responsibly and effectively. The mission is to combine strong data
             engineering, analytics, business intelligence, and research
             capabilities so that every project delivers clear, measurable
             business value.
-          </p>
+          </TextAnimate>
         </div>
       </div>
     </section>

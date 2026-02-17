@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export function AboutSection() {
   return (
@@ -19,29 +20,48 @@ export function AboutSection() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-4 py-10 text-center sm:px-6 sm:py-12 lg:py-0">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Reliable Analytics.
-            <br />
-            Measurable Outcomes.
-          </h2>
+          <TextAnimate
+            as="h2"
+            by="line"
+            once
+            startOnView
+            animation="blurInUp"
+            className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl"
+          >
+            {`Reliable Analytics.\nMeasurable Outcomes.`}
+          </TextAnimate>
         </div>
       </div>
 
       <div className="flex flex-col justify-center px-4 py-12 sm:px-6 sm:py-16 lg:w-[40%] lg:px-12 lg:py-24">
-        <p className="text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg">
+        <TextAnimate
+          as="p"
+          by="word"
+          once
+          startOnView
+          animation="fadeIn"
+          className="text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg"
+        >
           Zestlogic Systems Private Limited is a data-focused technology company
           helping organisations turn fragmented information into clear, reliable
           insights. Our teams combine data engineering, analytics, business
           intelligence, and research & development to address diverse business
           needs.
-        </p>
-        <p className="mt-6 text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg">
+        </TextAnimate>
+        <TextAnimate
+          as="p"
+          by="word"
+          once
+          startOnView
+          animation="fadeIn"
+          className="mt-6 text-sm leading-relaxed text-white/90 sm:text-base sm:text-lg"
+        >
           We design secure, scalable architectures, build intuitive dashboards,
           and apply advanced analytics or AI/ML where they create measurable
           value. By working closely with business stakeholders, we ensure that
           every solution is understandable, maintainable, and aligned with
           strategic goals.
-        </p>
+        </TextAnimate>
       </div>
     </section>
   );

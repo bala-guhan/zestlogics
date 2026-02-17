@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export function IndustriesHero() {
   return (
@@ -20,14 +21,28 @@ export function IndustriesHero() {
       <div className="relative z-10 flex min-h-[calc(100vh-3.5rem)] flex-col justify-center px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-7xl">
           <div className="max-w-2xl rounded-lg bg-black/40 px-4 py-6 backdrop-blur-sm sm:px-10 sm:py-10">
-            <h1 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl sm:text-5xl lg:text-6xl">
+            <TextAnimate
+              as="h1"
+              by="word"
+              once
+              startOnView
+              animation="blurInUp"
+              className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-4xl sm:text-5xl lg:text-6xl"
+            >
               Industries We Serve
-            </h1>
-            <p className="mt-4 text-base text-white/90 sm:mt-6 sm:text-lg sm:text-xl">
+            </TextAnimate>
+            <TextAnimate
+              as="p"
+              by="word"
+              once
+              startOnView
+              animation="fadeIn"
+              className="mt-4 text-base text-white/90 sm:mt-6 sm:text-lg sm:text-xl"
+            >
               Zestlogic Systems applies data analytics, business intelligence,
               and technology solutions across key industries to deliver
               measurable performance improvements.
-            </p>
+            </TextAnimate>
           </div>
         </div>
       </div>
